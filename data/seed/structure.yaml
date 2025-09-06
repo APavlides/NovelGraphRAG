@@ -1,0 +1,157 @@
+# Novel Structure Configuration
+# Defines how the AI should approach chapter generation and content requirements
+
+chapter_requirements:
+  first_chapter:
+    # What should be included in the opening chapter
+    guidance: |
+      IMPORTANT: In this first chapter, you should:
+      - Reference specific backstory details mentioned in the character descriptions
+      - Include at least hints of the key relationships and conflicts from the arcs
+      - Mention or allude to important locations from the world data
+      - Set up the major story threads that will develop throughout the novel
+
+    # Specific elements that should be referenced
+    required_elements:
+      - "fire" # David's traumatic incident
+      - "firefighter" # His past profession
+      - "grandmother" # Maria's family connection
+      - "diary" # Key plot device
+      - "lighthouse" # Important location
+
+    # Character presence requirements
+    character_requirements:
+      protagonist: "should have significant presence in this chapter"
+      deuteragonist: "should have significant presence in this chapter"
+      antagonist: "should be mentioned, hinted at, or make an appearance"
+      supernatural_entity: "should be mentioned, hinted at, or make an appearance"
+      supporting: "consider including or referencing"
+
+  subsequent_chapters:
+    guidance: |
+      Continue building on established story threads while advancing the plot.
+      Reference previous events and maintain character consistency.
+
+    # When to include seed data as reference in later chapters
+    include_seed_reference_when:
+      rag_context_shorter_than: 500 # characters
+      rag_context_missing: true
+
+# Content validation rules
+validation:
+  # Elements to check for in generated content
+  check_elements:
+    - "backstory_references"
+    - "character_presence"
+    - "key_terms"
+    - "location_references"
+
+  # Severity levels: "warning", "error", "ignore"
+  missing_element_severity: "warning"
+
+  # Retry generation if critical elements missing
+  retry_on_missing: false
+
+# Genre-specific preferences
+genre:
+  type: "literary_fiction" # affects tone and pacing expectations
+  conventions:
+    - "character_driven"
+    - "atmospheric"
+    - "introspective"
+
+  # Tone guidance
+  tone_guidance: |
+    Write engaging prose with vivid descriptions, authentic dialogue, and emotional depth.
+    Focus on character development and atmospheric details.
+
+# Prompt templates (can be customized per project)
+templates:
+  system: "You are a skilled novelist writing a compelling narrative."
+  seed_intro: "Here is the foundational information for this story:"
+  rag_intro: "Here is what has happened in the story so far:"
+  task_intro: "Your task:"
+  formatting_guide: "Write engaging prose with vivid descriptions, authentic dialogue, and emotional depth."
+
+# Enhanced structure.yaml with seed data templates
+seed_data_templates:
+  characters:
+    # How to format character information in prompts
+    format: |
+      **{name}** ({role}): {description}
+
+      Key Traits: {traits}
+      Goals: {goals}
+      Relationships: {relationships}
+
+      {first_chapter_guidance}
+
+    # Which fields to emphasize for first chapter
+    first_chapter_fields:
+      - "description"
+      - "backstory_details"
+      - "must_reference_in_first_chapter"
+      - "relationships"
+
+    # Which fields to de-emphasize or skip
+    skip_fields:
+      - "internal_id"
+      - "creation_date"
+
+    # Custom formatting for specific field types
+    field_formatting:
+      traits: "comma_separated"
+      goals: "bulleted_list"
+      relationships: "key_value_pairs"
+      backstory_details: "bulleted_list"
+
+  arcs:
+    format: |
+      **{name}**: {description}
+
+      Key Events: {key_events}
+      Characters Involved: {characters}
+
+    first_chapter_fields:
+      - "description"
+      - "key_events"
+
+    field_formatting:
+      key_events: "numbered_list"
+      characters: "comma_separated"
+
+  world:
+    format: |
+      **Locations:**
+      {locations}
+
+    first_chapter_fields:
+      - "locations"
+
+    field_formatting:
+      locations: "bulleted_descriptions"
+
+  overview:
+    format: |
+      **Story Summary:**
+      {content}
+
+    # For overview, just use the content as-is
+    use_raw_content: true
+
+# Template application rules
+template_rules:
+  # When to apply specific formatting
+  apply_character_requirements_when:
+    - "is_first_chapter"
+
+  apply_arc_hints_when:
+    - "is_first_chapter"
+    - "rag_context_missing"
+
+  # How verbose to be with different data types
+  verbosity:
+    characters: "detailed" # full, detailed, summary, minimal
+    arcs: "summary"
+    world: "detailed"
+    overview: "full"

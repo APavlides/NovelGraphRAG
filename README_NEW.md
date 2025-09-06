@@ -9,7 +9,7 @@ This project provides a complete workflow for generating full-length novels with
 ## Key Features
 
 - 🎛️ **Configuration-Driven Prompts** - No hardcoded story elements, completely customizable
-- 📚 **Two-Phase Generation** - Seed data for first chapter, RAG context for subsequent chapters  
+- 📚 **Two-Phase Generation** - Seed data for first chapter, RAG context for subsequent chapters
 - 🎭 **Genre-Agnostic System** - Works for any novel type (literary fiction, mystery, romance, fantasy, etc.)
 - 📋 **Template-Based Formatting** - Flexible presentation of story data to AI
 - 🔍 **Quality Analysis Tools** - Automated chapter evaluation against your requirements
@@ -41,7 +41,7 @@ NovelGraphRAG/
 │   ├── seed/                      # Story configuration files
 │   │   ├── overview.md           # Story summary and themes
 │   │   ├── characters.yaml       # Character definitions
-│   │   ├── arcs.yaml            # Story arc definitions  
+│   │   ├── arcs.yaml            # Story arc definitions
 │   │   ├── world.yaml           # Locations and world-building
 │   │   └── structure.yaml       # Writing process configuration
 │   └── novel/                    # Generated chapter content
@@ -58,14 +58,19 @@ The heart of NovelGraphRAG is its **five-file configuration system** that define
 ### **Story Data Files** (`data/seed/`)
 
 #### `overview.md`
+
 High-level story summary, themes, and narrative direction.
+
 ```markdown
 # Novel Overview
+
 This novel follows David, a former firefighter tormented by his past...
 ```
 
 #### `characters.yaml`
+
 Character definitions with roles, traits, relationships, and backstory details.
+
 ```yaml
 characters:
   - name: "David"
@@ -81,7 +86,9 @@ characters:
 ```
 
 #### `arcs.yaml`
+
 Story arc definitions with key events and character involvement.
+
 ```yaml
 arcs:
   - name: "David's Redemption"
@@ -92,7 +99,9 @@ arcs:
 ```
 
 #### `world.yaml`
+
 Locations and world-building elements.
+
 ```yaml
 locations:
   - name: "Crumbling Cliffs"
@@ -113,12 +122,12 @@ chapter_requirements:
       - Reference specific backstory details mentioned in character descriptions
       - Include at least hints of key relationships and conflicts from the arcs
       - Set up major story threads that will develop throughout the novel
-    
+
     required_elements:
-      - "fire"          # David's traumatic incident
-      - "firefighter"   # His past profession
-      - "lighthouse"    # Important location
-    
+      - "fire" # David's traumatic incident
+      - "firefighter" # His past profession
+      - "lighthouse" # Important location
+
     character_requirements:
       protagonist: "should have significant presence in this chapter"
       supernatural_entity: "should be mentioned, hinted at, or make an appearance"
@@ -153,6 +162,7 @@ pip install -r requirements.txt
 ```
 
 Create `.env` file:
+
 ```bash
 OPENAI_API_KEY=your_openai_key_here
 OPENAI_MODEL=gpt-4o-mini
@@ -162,8 +172,9 @@ USE_PLACEHOLDER_LLM=false
 ### 2. **Configure Your Story**
 
 Edit the files in `data/seed/` to define your novel:
+
 - `overview.md` - Your story concept and themes
-- `characters.yaml` - Your protagonists, antagonists, and supporting characters  
+- `characters.yaml` - Your protagonists, antagonists, and supporting characters
 - `arcs.yaml` - Your major story arcs and plot threads
 - `world.yaml` - Your settings and locations
 - `structure.yaml` - Your genre and writing approach preferences
@@ -175,7 +186,7 @@ Edit the files in `data/seed/` to define your novel:
 python -m scripts.generate_first_chapter
 
 # Index generated content for RAG
-python scripts/index_novel_documents.py  
+python scripts/index_novel_documents.py
 
 # Generate subsequent chapters (uses RAG context)
 python -m scripts.generate_subsequent_chapters
@@ -202,6 +213,7 @@ python scripts/refresh_all.py
 ### **For Different Genres**
 
 **Mystery Novel:**
+
 ```yaml
 # structure.yaml
 chapter_requirements:
@@ -215,8 +227,9 @@ genre:
 ```
 
 **Romance Novel:**
+
 ```yaml
-# structure.yaml  
+# structure.yaml
 chapter_requirements:
   first_chapter:
     required_elements: ["meet_cute", "conflict", "attraction"]
@@ -230,23 +243,25 @@ genre:
 ### **For Different Story Approaches**
 
 **Literary Fiction:**
+
 ```yaml
 seed_data_templates:
   characters:
     format: |
       **{name}**: {description}
-      
+
       Internal Conflicts: {internal_conflicts}
       Psychological State: {psychological_state}
 ```
 
 **Fantasy Adventure:**
+
 ```yaml
 seed_data_templates:
   characters:
     format: |
       **{name}** the {role}: {description}
-      
+
       Powers: {magical_abilities}
       Quest: {goals}
       Companions: {relationships}

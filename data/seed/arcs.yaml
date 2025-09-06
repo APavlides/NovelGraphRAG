@@ -1,0 +1,33 @@
+arcs:
+  - name: "David's Redemption"
+    description: "David struggles with guilt over his past and seeks redemption through acts of courage."
+    key_events:
+      - "David saves a child from a burning building."
+      - "David confesses his secret to Maria."
+      - "David forgives himself after a confrontation with his old rival."
+    characters:
+      - "David"
+      - "Maria"
+      - "Old Rival"
+
+  - name: "Maria's Awakening"
+    description: "Maria discovers her hidden talents and learns to stand up for herself."
+    key_events:
+      - "Maria finds her grandmother's diary."
+      - "Maria confronts her boss at work."
+      - "Maria decides to travel abroad alone."
+    characters:
+      - "Maria"
+      - "Grandmother"
+      - "Boss"
+
+  - name: "The Ghost Mystery"
+    description: "A series of supernatural events leads the main characters to uncover the truth behind the haunted cliffs."
+    key_events:
+      - "First ghost sighting at the cliffs."
+      - "David and Maria investigate the old lighthouse."
+      - "The true identity of the ghost is revealed."
+    characters:
+      - "David"
+      - "Maria"
+      - "The Ghost"

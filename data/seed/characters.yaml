@@ -1,0 +1,53 @@
+characters:
+  - name: "David"
+    role: "Protagonist"
+    description: "A former firefighter haunted by his past, seeking redemption."
+    backstory_details:
+      - "Lost lives in a specific fire incident"
+      - "Carries guilt about those he couldn't save"
+      - "Traded firefighter helmet for solitude"
+    traits:
+      - "Brave"
+      - "Guilt-ridden"
+      - "Loyal"
+    must_reference_in_first_chapter:
+      - "His past as a firefighter"
+      - "The specific fire that haunts him"
+      - "His guilt and isolation"
+    goals:
+      - "Redeem himself"
+      - "Protect Maria"
+    relationships:
+      Maria: "Friend"
+      Old Rival: "Antagonist"
+
+  - name: "Old Rival"
+    role: "Antagonist"
+    description: "David's former colleague who blames him for past failures."
+    first_chapter_hint: "Should be referenced through David's memories or fears"
+
+  - name: "Maria"
+    role: "Deuteragonist"
+    description: "A determined young woman searching for her family's secrets."
+    traits:
+      - "Curious"
+      - "Resourceful"
+      - "Empathetic"
+    goals:
+      - "Uncover her grandmother's past"
+      - "Help David"
+    relationships:
+      David: "Friend"
+      Grandmother: "Family"
+
+  - name: "The Ghost"
+    role: "Supernatural Entity"
+    description: "A mysterious presence haunting the cliffs."
+    traits:
+      - "Elusive"
+      - "Tragic"
+    goals:
+      - "Reveal the truth"
+    relationships:
+      David: "Haunts"
+      Maria: "Guides"
