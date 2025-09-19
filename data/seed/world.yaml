@@ -1,7 +1,74 @@
 locations:
-  - name: "Crumbling Cliffs"
-    description: "A dramatic, windswept coastline rumored to be haunted."
-  - name: "Old Lighthouse"
-    description: "An abandoned lighthouse overlooking the cliffs, central to the ghost mystery."
-  - name: "Maria's Family Home"
-    description: "A cozy, cluttered house filled with family secrets and old diaries."
+  - name: "The Cliff House"
+    description: "David's deceased mother's house sitting 30 feet from the crumbling cliff edge, doomed by coastal erosion to fall into the sea within 18-24 months. A place of borrowed time where his mother chose to live her final years."
+    significance: "Central location representing impermanence and the futility of trying to control loss"
+    atmosphere: "Precarious, melancholic, beautiful in its doomed state"
+    physical_details:
+      - "Tilting slightly toward the sea"
+      - "Rooms becoming uninhabitable as erosion progresses"
+      - "Mother's studio with unfinished paintings of the disappearing landscape"
+      - "Kitchen where she maintained routines despite impermanence"
+    symbolic_elements:
+      - "House leaning toward sea as metaphor for surrender"
+      - "Borrowed time as human condition"
+
+  - name: "Dunwich Village"
+    description: "A liminal Suffolk village where most of the medieval town already lies beneath the North Sea. A place where the past is literally drowned and the present exists on borrowed time."
+    significance: "Setting that embodies impermanence and the layers of loss"
+    atmosphere: "Haunted by its own disappearance, peaceful in its acceptance of transience"
+    historical_context:
+      - "Medieval town mostly claimed by the sea"
+      - "Church bells allegedly still ring beneath the waves"
+      - "Precedent for total loss - nothing lasts"
+    supernatural_elements:
+      - "Drowned townspeople as peaceful ghosts"
+      - "Church bells heard from beneath the sea"
+      - "Liminal space between existence and erasure"
+
+  - name: "The Lost Garden"
+    description: "What remains of the mother's garden at the cliff edge - greenhouse foundations, scattered pottery, plants claiming whatever soil remains before it too falls into the sea."
+    significance: "Physical evidence of ongoing loss and the patience of erosion"
+    atmosphere: "Elegiac, beautiful in its partiality"
+    elements:
+      - "Greenhouse foundations in the surf"
+      - "Scattered blue-patterned porcelain (like the piece David finds)"
+      - "Plants still growing in disappearing soil"
+      - "Fence posts appearing in the waves at high tide"
+
+  - name: "Mother's Studio"
+    description: "A room in the house where mother painted the changing landscape, filled with canvases showing the coast in various stages of disappearance. Her final painting shows Dunwich as always disappearing, always beautiful."
+    significance: "Represents artistic response to impermanence and temporal existence"
+    atmosphere: "Creative, contemplative, filled with evidence of a rich interior life David never accessed"
+    key_objects:
+      - "Unfinished paintings of the disappearing landscape"
+      - "Annotated poetry books revealing her philosophical depth"
+      - "Art supplies still arranged as if she might return"
+      - "Final painting showing acceptance of transience"
+
+  - name: "The Suffolk Heathland"
+    description: "The landscape mother painted - dunes, wind, light that changes everything, an ethereal quality that makes the temporal world seem less solid."
+    significance: "Natural setting that embodies the beauty of impermanence"
+    atmosphere: "Ethereal, constantly changing, peaceful in its wild state"
+    sensory_details:
+      - "Wind that carries voices or might be imagination"
+      - "Light that transforms the landscape moment by moment"
+      - "Dunes that shift with weather and season"
+      - "Heathland that remains while human structures fall"
+
+  - name: "The Museum"
+    description: "Local repository where David eventually donates mother's paintings, ensuring her artistic response to impermanence becomes part of the community's memory."
+    significance: "Represents continuity through preservation of artistic legacy"
+    atmosphere: "Quiet, respectful, dedicated to memory"
+    role_in_story:
+      - "Houses maps of the drowned medieval town"
+      - "Becomes home to mother's paintings"
+      - "Represents different way of being broken - preservation rather than healing"
+
+  - name: "The North Sea"
+    description: "The patient, relentless force that has already claimed the medieval town and will claim the house. Not malevolent but utterly indifferent to human attachment to permanence."
+    significance: "Ultimate representation of impermanence and forces beyond human control"
+    atmosphere: "Vast, patient, indifferent, beautiful in its power"
+    symbolic_role:
+      - "Patient erosion as natural process"
+      - "Repository of all that has been lost"
+      - "Teacher of acceptance through inevitability"

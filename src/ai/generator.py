@@ -3,7 +3,6 @@ import os
 from typing import Any, Dict, List
 
 import openai
-from dotenv import load_dotenv
 
 from src.ai.prompt_builder import PromptBuilder
 from src.ai.seed_prompt_loader import load_seed_data

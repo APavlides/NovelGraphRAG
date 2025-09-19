@@ -22,5 +22,5 @@ for folder in ["data_index", "graph_data"]:
         try:
             shutil.rmtree(folder_path)
             print(f"Deleted {folder_path}")
-        except Exception as e:
+        except (FileNotFoundError, PermissionError) as e:
             print(f"Could not delete {folder_path}: {e}")

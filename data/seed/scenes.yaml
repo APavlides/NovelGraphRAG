@@ -1,0 +1,427 @@
+# The Liminal Space - Story Structure
+# Detailed scenes, chapters, and parts for complete novel organization
+
+novel_structure:
+  title: "The Liminal Space"
+  total_chapters: 12
+  has_epilogue: true
+
+  parts:
+    part_one:
+      title: "The Arrival"
+      chapters: "1-4"
+      theme: "David arrives and confronts the house's impermanence while his analytical patterns reassert themselves"
+      arc_focus: "Setting up the central conflict between understanding and feeling"
+
+    part_two:
+      title: "Conversations with the Drowned"
+      chapters: "5-9"
+      theme: "Ghost encounters representing his regrets and missed connections"
+      arc_focus: "David's journey through stages of grief and resistance to acceptance"
+
+    part_three:
+      title: "Learning to Drown"
+      chapters: "10-12"
+      theme: "Final acceptance of impermanence without need for understanding"
+      arc_focus: "David learns to exist with uncertainty and finds peace in impermanence"
+
+# Detailed chapter and scene breakdown
+chapters:
+  chapter_1:
+    title: "The House That Refuses to Stay Solid"
+    part: "part_one"
+    opening_line_reference: "his confession about understanding vs. feeling"
+
+    scenes:
+      scene_1:
+        setting: "Arriving at the cliff house"
+        purpose: "Establish David's internal conflict and the house's precarious position"
+        key_elements:
+          - "David's confession about choosing feeling over understanding"
+          - "First sight of the house 30 feet from cliff edge"
+          - "Realtor's 18-24 month estimate"
+          - "The concept of 'borrowed time'"
+
+      scene_2:
+        setting: "Inside the house, exploring mother's belongings"
+        purpose: "Introduce mother's hidden depths through her possessions"
+        key_elements:
+          - "Mother's annotated Yeats poetry books"
+          - "Evidence of her artistic and intellectual life"
+          - "David's surprise at her complexity"
+
+      scene_3:
+        setting: "Evening reflection"
+        purpose: "Establish David's commitment to change his approach"
+        key_elements:
+          - "David's resolution not to analyze"
+          - "First moment of genuine acceptance"
+        ending_line: "And for the first time in years, I'm not trying to understand why."
+
+  chapter_2:
+    title: "Inventory of a Life"
+    part: "part_one"
+
+    scenes:
+      scene_1:
+        setting: "Morning after arrival"
+        purpose: "Show the ongoing erosion and loss"
+        key_elements:
+          - "Garden fence now in the surf"
+          - "Visual evidence of the cliff's retreat"
+          - "David processing the relentless loss"
+
+      scene_2:
+        setting: "Inside house, going through mother's effects"
+        purpose: "Discover the wooden heart artifact and mother's connection to local folklore"
+        key_elements:
+          - "Mother's personal belongings"
+          - "The wooden heart (Dark Heart of Dunwich folklore)"
+          - "Evidence of mother's deep connection to the place"
+
+      scene_3:
+        setting: "Phone calls to London"
+        purpose: "Show David's disconnection from his old life"
+        key_elements:
+          - "Failed or uncomfortable calls to his former life"
+          - "Growing distance from London existence"
+          - "Realization that he's already changing"
+
+      scene_4:
+        setting: "Village museum visit"
+        purpose: "Research the drowned town and local history"
+        key_elements:
+          - "Maps of the medieval Dunwich beneath the waves"
+          - "Learning about the town's gradual disappearance"
+          - "Parallel between the drowned town and the current house"
+
+  chapter_3:
+    title: "Walking the Edge"
+    part: "part_one"
+
+    scenes:
+      scene_1:
+        setting: "Suffolk heathland exploration"
+        purpose: "David begins to understand the landscape through mother's eyes"
+        key_elements:
+          - "First walk through the heathland"
+          - "Mother's landscape paintings finally making sense"
+          - "The ethereal quality of dunes, wind, and changing light"
+
+      scene_2:
+        setting: "Near the cliff edge or shore"
+        purpose: "First supernatural hint - the drowned church bells"
+        key_elements:
+          - "Hearing (or thinking he hears) church bells beneath the waves"
+          - "Uncertainty about what's real"
+          - "Connection to the drowned town legend"
+
+      scene_3:
+        setting: "Village encounter (pub or museum)"
+        purpose: "First human contact and local perspective"
+        key_elements:
+          - "Meeting museum curator or pub landlord"
+          - "Local knowledge about the house and area"
+          - "David's first social interaction since arrival"
+
+  chapter_4:
+    title: "The Logic of Erosion"
+    part: "part_one"
+
+    scenes:
+      scene_1:
+        setting: "House routines"
+        purpose: "Show David's attempt to impose order on the impermanent"
+        key_elements:
+          - "Establishing daily routines that feel absurd"
+          - "The contradiction of routine in a place without permanence"
+          - "Old analytical habits reasserting themselves"
+
+      scene_2:
+        setting: "Daily erosion measurement"
+        purpose: "David's compulsive need to quantify the loss"
+        key_elements:
+          - "Measuring distance to cliff edge daily"
+          - "Recording the retreat of the land"
+          - "Futile attempt to make sense of inevitable loss"
+
+      scene_3:
+        setting: "Mother's studio space"
+        purpose: "Discover mother's artistic legacy and unfinished work"
+        key_elements:
+          - "Finding mother's art studio"
+          - "Her unfinished paintings"
+          - "Evidence of her creative response to impermanence"
+
+      scene_4:
+        setting: "Accumulating losses around the house"
+        purpose: "Show the relentless nature of erosion"
+        key_elements:
+          - "Small losses: fence post, windowsill, garden gate"
+          - "The patient persistence of destruction"
+          - "David's growing awareness of inevitability"
+
+  chapter_5:
+    title: "The Woman at the Kitchen Table"
+    part: "part_two"
+
+    scenes:
+      scene_1:
+        setting: "Kitchen, first ghost encounter"
+        purpose: "David's first supernatural experience and denial stage"
+        key_elements:
+          - "First ghost appearance"
+          - "David's attempts to rationalize the impossible"
+          - "Forced to describe rather than explain"
+
+      scene_2:
+        setting: "Continued conversation with the ghost"
+        purpose: "Establish the central tension: seeing vs. feeling"
+        key_elements:
+          - "Ghost's challenge: 'What do you see?' vs. 'What do you feel?'"
+          - "David's struggle with direct experience"
+          - "Introduction to the ghost's teaching method"
+
+  chapter_6:
+    title: "Sarah in Mother's Bedroom"
+    part: "part_two"
+
+    scenes:
+      scene_1:
+        setting: "Mother's bedroom"
+        purpose: "Encounter with the ghost of romantic loss"
+        key_elements:
+          - "Sarah's ghost appears - the married friend"
+          - "Represents anger/bargaining stage"
+          - "The cruelest ghost because she represents choice, not fate"
+
+      scene_2:
+        setting: "Confrontation with Sarah's ghost"
+        purpose: "Direct accusation about David's pattern of analysis killing relationships"
+        key_elements:
+          - "Sarah's accusation: 'You killed us both. Slowly. One careful choice at a time.'"
+          - "David confronting his role in relationship failures"
+          - "The price of over-analysis in love"
+
+  chapter_7:
+    title: "The Career He Didn't Have"
+    part: "part_two"
+
+    scenes:
+      scene_1:
+        setting: "Mother's studio among her paintings"
+        purpose: "Ghost of professional/creative regret appears"
+        key_elements:
+          - "Ghost of professional ambition and creative risk"
+          - "Represents depression stage of grief"
+          - "Appears among mother's bold artistic choices"
+
+      scene_2:
+        setting: "Confrontation with unlived potential"
+        purpose: "Show David the books he didn't write, risks he didn't take"
+        key_elements:
+          - "Vision of creative work he never attempted"
+          - "The safety of mediocrity vs. terror of trying"
+          - "Contrast with mother's artistic courage"
+
+  chapter_8:
+    title: "His Mother, Finally"
+    part: "part_two"
+
+    scenes:
+      scene_1:
+        setting: "Anywhere in the house"
+        purpose: "Mother's ghost appears for honest confrontation"
+        key_elements:
+          - "Not sentimental reunion but truth-telling"
+          - "She appears as herself, not his projection"
+          - "Direct confrontation about their relationship"
+
+      scene_2:
+        setting: "Continued conversation with mother"
+        purpose: "Mother's perspective on David's analytical nature"
+        key_elements:
+          - "Mother's words: 'You spent so long trying to solve me, you forgot to know me'"
+          - "Partial acceptance but not complete resolution"
+          - "David beginning to understand the difference"
+
+  chapter_9:
+    title: "The Drowned Town Rises"
+    part: "part_two"
+
+    scenes:
+      scene_1:
+        setting: "House or nearby shore"
+        purpose: "All ghosts appear together with medieval townspeople"
+        key_elements:
+          - "Collective ghost appearance"
+          - "Medieval townspeople from drowned Dunwich"
+          - "Overwhelming supernatural presence"
+
+      scene_2:
+        setting: "Interaction with all the ghosts"
+        purpose: "Demonstrate acceptance without comprehension"
+        key_elements:
+          - "Ghosts don't want understanding or resolution"
+          - "They simply exist - being and not-being simultaneously"
+          - "David's first glimpse of pure acceptance"
+          - "Model for living with mystery"
+
+  chapter_10:
+    title: "The Slow Emergency"
+    part: "part_three"
+
+    scenes:
+      scene_1:
+        setting: "House showing increased deterioration"
+        purpose: "Show the quiet relentlessness of loss"
+        key_elements:
+          - "Not dramatic storm but steady progression"
+          - "Another room becomes uninhabitable"
+          - "Kitchen floor tilts"
+          - "Undramatic but unmistakable change"
+
+      scene_2:
+        setting: "David's response to deterioration"
+        purpose: "Show David's growth in acceptance"
+        key_elements:
+          - "He stops measuring the erosion"
+          - "Finally accepting the pace of loss"
+          - "No more quantifying or analyzing"
+
+      scene_3:
+        setting: "Preparation activities"
+        purpose: "David begins practical acceptance"
+        key_elements:
+          - "Begins giving things away"
+          - "Preparing without drama or resistance"
+          - "Practical steps toward leaving"
+
+  chapter_11:
+    title: "The House Chooses Its Moment"
+    part: "part_three"
+
+    scenes:
+      scene_1:
+        setting: "Morning after overnight shift"
+        purpose: "The house's decisive movement"
+        key_elements:
+          - "David wakes to find house has shifted overnight"
+          - "Not catastrophic but unmistakably final"
+          - "Back rooms now unusable"
+          - "The house making its own decision"
+
+      scene_2:
+        setting: "What remains of the house"
+        purpose: "David's peaceful response to loss"
+        key_elements:
+          - "Makes coffee in what remains"
+          - "Watches sunrise from diminished space"
+          - "Calm acceptance of the change"
+
+      scene_3:
+        setting: "Absence of ghosts"
+        purpose: "Show David's growth - ghosts no longer needed"
+        key_elements:
+          - "Ghosts don't appear"
+          - "They're no longer necessary for his development"
+          - "David has internalized their lessons"
+
+  chapter_12:
+    title: "What Remains"
+    part: "part_three"
+
+    scenes:
+      scene_1:
+        setting: "Packing and salvaging"
+        purpose: "David's final actions in the house"
+        key_elements:
+          - "Moving last salvageable items"
+          - "Practical but not desperate preparations"
+          - "Calm, methodical farewell"
+
+      scene_2:
+        setting: "Discovery of mother's final painting"
+        purpose: "Finding the key to understanding mother's acceptance"
+        key_elements:
+          - "Mother's final painting showing Dunwich as it truly is"
+          - "Always disappearing, always beautiful"
+          - "The aesthetic of impermanence"
+
+      scene_3:
+        setting: "Museum donation with curator"
+        purpose: "Completing mother's artistic legacy"
+        key_elements:
+          - "Curator helps donate mother's work to museum"
+          - "Preserving art while accepting loss"
+          - "Community support and connection"
+
+      scene_4:
+        setting: "Final reflection"
+        purpose: "David's transformation without healing"
+        key_elements:
+          - "Not healing but a different way of being broken"
+          - "Acceptance of his changed state"
+          - "Integration of loss into identity"
+
+  epilogue:
+    title: "The Liminal Space"
+    setting: "Six months later, Suffolk coast path"
+    purpose: "Show David's ongoing journey with impermanence"
+
+    scenes:
+      scene_1:
+        setting: "Walking the coast path"
+        purpose: "David in his new relationship with the landscape"
+        key_elements:
+          - "Six months after leaving the house"
+          - "Walking Suffolk coast path"
+          - "House is gone but heathland remains, still shifting"
+
+      scene_2:
+        setting: "Internal reflection while walking"
+        purpose: "Show David's transformed relationship with uncertainty"
+        key_elements:
+          - "Carries wooden heart as reminder, not talisman"
+          - "Symbol of accepting mystery rather than solving it"
+          - "Physical token of his journey"
+
+      scene_3:
+        setting: "Ending moment"
+        purpose: "Final statement of David's transformation"
+        key_elements:
+          - "Ending with acceptance of impermanence"
+          - "Final line: 'I still don't understand. I'm learning not to need to.'"
+          - "Perfect encapsulation of his growth"
+
+# Structural notes for generation
+generation_guidance:
+  pacing:
+    part_one: "Establish setting, character, and central conflict. Build David's analytical patterns."
+    part_two: "Intensify supernatural encounters. Each ghost represents a different stage of David's resistance to acceptance."
+    part_three: "Resolution through acceptance. Show David's transformation through action, not explanation."
+
+  recurring_motifs:
+    - "Measurement and quantification vs. direct experience"
+    - "The patience of erosion and loss"
+    - "Art as response to impermanence"
+    - "Church bells as connection between past and present"
+    - "The wooden heart as symbol of mystery"
+
+  tone_progression:
+    part_one: "Contemplative, establishing David's patterns"
+    part_two: "Increasingly supernatural, emotionally intense"
+    part_three: "Peaceful resolution, elegiac acceptance"
+    epilogue: "Quiet wisdom, ongoing journey"
+
+  key_transitions:
+    chapter_4_to_5: "From analyzing physical erosion to encountering emotional ghosts"
+    chapter_9_to_10: "From supernatural encounters to practical acceptance"
+    chapter_11_to_12: "From house's decision to David's integration"
+
+# Scene generation prompts
+scene_prompts:
+  opening_scenes: "Establish setting and character state. Show don't tell David's internal conflict."
+  ghost_scenes: "Focus on dialogue and emotional confrontation. Ghosts speak truth David avoids."
+  transition_scenes: "Show David's gradual change through actions and choices, not internal monologue."
+  resolution_scenes: "Demonstrate acceptance through David's response to loss, not through explanation."

@@ -1,25 +1,110 @@
 characters:
   - name: "David"
     role: "Protagonist"
-    description: "A former firefighter haunted by his past, seeking redemption."
+    description: "A 43-year-old chronic over-analyzer who has spent his life rationalizing away emotional pain, now confronting his mother's death and his own patterns of avoidance."
     backstory_details:
-      - "Lost lives in a specific fire incident"
-      - "Carries guilt about those he couldn't save"
-      - "Traded firefighter helmet for solitude"
+      - "Chronic over-analyzer who intellectualizes emotions to avoid feeling them"
+      - "Career stalled due to his tendency to play it safe"
+      - "Sarah left him - a relationship he tried to analyze rather than grieve"
+      - "Turned down lovers and chances because they weren't the 'right kind of trouble'"
+      - "Kept himself distant from his mother through analysis rather than connection"
     traits:
-      - "Brave"
-      - "Guilt-ridden"
-      - "Loyal"
-    must_reference_in_first_chapter:
-      - "His past as a firefighter"
-      - "The specific fire that haunts him"
-      - "His guilt and isolation"
+      - "Intellectually defensive"
+      - "Emotionally distant but yearning for connection"
+      - "Highly analytical but starting to question this approach"
     goals:
-      - "Redeem himself"
-      - "Protect Maria"
+      - "Learn to feel rather than understand"
+      - "Accept impermanence without needing to control it"
+      - "Connect with his mother's memory authentically"
     relationships:
-      Maria: "Friend"
-      Old Rival: "Antagonist"
+      Mother: "Complex - he tried to solve her rather than know her"
+      Sarah: "The woman who left, whom he analyzed rather than grieved"
+      Ghosts: "Manifestations of his regrets and missed connections"
+    must_reference_in_first_chapter:
+      - "His pattern of over-analysis as emotional defense"
+      - "Arriving after his mother's sparsely attended funeral"
+      - "His commitment to try feeling rather than understanding"
+
+  - name: "Mother"
+    role: "Supporting"
+    description: "David's deceased mother, an artist who chose to stay in the doomed cliff house, painting the disappearing landscape until the end."
+    backstory_details:
+      - "Remained in the house despite knowing it would fall into the sea"
+      - "Artist who painted the changing landscape as it disappeared"
+      - "Had a rich interior life revealed through her annotated Yeats book"
+      - "Maintained her routines despite the house's impermanence"
+      - "Left behind unfinished paintings and evidence of her philosophical depth"
+    traits:
+      - "Accepting of impermanence"
+      - "Artistically gifted"
+      - "Lived authentically in borrowed time"
+      - "Philosophically deep (revealed posthumously)"
+    goals:
+      - "Guide David to emotional authenticity through her example"
+      - "Show him a different way of living with uncertainty"
+    relationships:
+      David: "Complex mother-son relationship he's now trying to understand"
+    must_reference_in_first_chapter:
+      - "Her annotated Yeats book revealing her interior life"
+      - "Her choice to stay in the doomed house"
+      - "Her unfinished paintings and maintained routines"
+
+  - name: "Sarah"
+    role: "Antagonist"
+    description: "The woman who left David, representing his pattern of analyzing relationships to death rather than living them."
+    backstory_details:
+      - "Left David, likely due to his emotional unavailability"
+      - "Represents the relationships he destroyed through over-analysis"
+      - "A missed connection he tried to rationalize rather than grieve"
+    traits:
+      - "Represents authenticity David avoided"
+      - "Embodies the cost of his analytical detachment"
+    goals:
+      - "Force David to confront how his patterns hurt others"
+      - "Represent the pain of connection lost to analysis"
+    relationships:
+      David: "Former lover whose departure he intellectualized"
+    first_chapter_hint: "Referenced as 'she left' - the analyzed departure"
+
+  - name: "The Drowned Medieval Townspeople"
+    role: "Supernatural Entity"
+    description: "Ghosts of the medieval Dunwich town that lies beneath the North Sea, representing acceptance of impermanence."
+    backstory_details:
+      - "Inhabitants of the medieval town claimed by the sea centuries ago"
+      - "Their church bells still allegedly ring beneath the waves"
+      - "Exist in the liminal space between being and not-being"
+      - "Don't seek understanding or resolution, they simply are"
+    traits:
+      - "Accept impermanence without struggle"
+      - "Exist without need for explanation"
+      - "Peaceful in their drowned state"
+    goals:
+      - "Show David what acceptance without comprehension looks like"
+      - "Represent the peace possible in letting go of control"
+    relationships:
+      David: "Teach him about existence beyond understanding"
+    must_reference_in_first_chapter:
+      - "The legendary church bells beneath the waves"
+      - "The drowned town as precedent for total loss"
+      - "Hint at supernatural elements to come"
+
+  - name: "The Realtor"
+    role: "Supporting"
+    description: "Local professional who provides the quantified timeline for the house's destruction, representing society's attempt to measure the unmeasurable."
+    backstory_details:
+      - "Familiar with coastal erosion patterns"
+      - "Provides the 18-24 month timeline for the house's fall"
+      - "Represents the illusion of certainty about uncertain things"
+    traits:
+      - "Professional and matter-of-fact"
+      - "Deals in concrete assessments"
+      - "Unknowingly ironic about measuring impermanence"
+    goals:
+      - "Provide practical assessment of the situation"
+      - "Represent the limits of quantification"
+    relationships:
+      David: "Provides the timeline that frames his stay"
+    first_chapter_hint: "The assessment confirming the house's timeline for destruction"
 
   - name: "Old Rival"
     role: "Antagonist"

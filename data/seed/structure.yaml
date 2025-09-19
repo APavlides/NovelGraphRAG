@@ -1,50 +1,56 @@
-# Novel Structure Configuration
-# Defines how the AI should approach chapter generation and content requirements
+# Novel Structure Configuration for "The Liminal Space"
+# Literary ghost story about acceptance vs. understanding
 
 chapter_requirements:
   first_chapter:
     # What should be included in the opening chapter
     guidance: |
-      IMPORTANT: In this first chapter, you should:
-      - Reference specific backstory details mentioned in the character descriptions
-      - Include at least hints of the key relationships and conflicts from the arcs
-      - Mention or allude to important locations from the world data
-      - Set up the major story threads that will develop throughout the novel
+      IMPORTANT: This first chapter should establish David's central conflict between analysis and feeling:
+      - Show his pattern of over-analyzing emotions as defense mechanism
+      - Establish his arrival at the doomed cliff house after mother's funeral
+      - Reveal his commitment to try feeling rather than understanding
+      - Introduce the house's impermanence (18-24 months before it falls)
+      - Show mother's hidden depth through her annotated books and paintings
+      - End with his first moment of letting go - not trying to understand
 
     # Specific elements that should be referenced
     required_elements:
-      - "fire" # David's traumatic incident
-      - "firefighter" # His past profession
-      - "grandmother" # Maria's family connection
-      - "diary" # Key plot device
-      - "lighthouse" # Important location
+      - "over-analysis" # David's defensive pattern
+      - "mother" # His deceased mother whose house this is
+      - "cliff" # The eroding cliff edge
+      - "impermanence" # The house's doomed timeline
+      - "Yeats" # Mother's annotated poetry books
+      - "funeral" # Recent event that brings him here
+      - "borrowed time" # The house's 18-24 month timeline
+      - "church bells" # Hint at the drowned town supernatural elements
 
     # Character presence requirements
     character_requirements:
-      protagonist: "should have significant presence in this chapter"
-      deuteragonist: "should have significant presence in this chapter"
-      antagonist: "should be mentioned, hinted at, or make an appearance"
-      supernatural_entity: "should be mentioned, hinted at, or make an appearance"
-      supporting: "consider including or referencing"
+      protagonist: "should dominate this chapter - his internal journey is central"
+      supporting: "mother should be present through her possessions, art, and annotations"
+      supernatural_entity: "drowned townspeople should be hinted at through church bells legend"
+      antagonist: "Sarah should be referenced as 'she left' - the analyzed departure"
 
   subsequent_chapters:
     guidance: |
-      Continue building on established story threads while advancing the plot.
-      Reference previous events and maintain character consistency.
+      Continue David's journey from analysis to acceptance.
+      Show gradual encounters with ghosts representing his regrets.
+      Track the house's physical deterioration as metaphor.
+      Build toward his final acceptance of impermanence without understanding.
 
     # When to include seed data as reference in later chapters
     include_seed_reference_when:
-      rag_context_shorter_than: 500 # characters
+      rag_context_shorter_than: 400 # characters
       rag_context_missing: true
 
 # Content validation rules
 validation:
   # Elements to check for in generated content
   check_elements:
-    - "backstory_references"
-    - "character_presence"
-    - "key_terms"
-    - "location_references"
+    - "emotional_authenticity" # Is David's internal conflict believable?
+    - "impermanence_theme" # Is the theme of impermanence present?
+    - "literary_quality" # Does the prose match literary fiction standards?
+    - "atmospheric_details" # Suffolk coast, cliff erosion, borrowed time?
 
   # Severity levels: "warning", "error", "ignore"
   missing_element_severity: "warning"
@@ -54,24 +60,30 @@ validation:
 
 # Genre-specific preferences
 genre:
-  type: "literary_fiction" # affects tone and pacing expectations
+  type: "literary_fiction"
+  subgenre: "literary_ghost_story"
   conventions:
     - "character_driven"
+    - "psychologically_complex"
+    - "elegiac_tone"
+    - "philosophical"
     - "atmospheric"
     - "introspective"
 
   # Tone guidance
   tone_guidance: |
-    Write engaging prose with vivid descriptions, authentic dialogue, and emotional depth.
-    Focus on character development and atmospheric details.
+    Write quiet, contemplative prose with elegiac beauty. This is literary fiction that uses 
+    supernatural elements for emotional truth rather than horror. Focus on internal landscape
+    matching external landscape. Use the Suffolk coast setting to create atmosphere of
+    impermanence and borrowed time. Ghosts should feel like emotional reality, not horror.
 
-# Prompt templates (can be customized per project)
+# Prompt templates (customized for literary ghost story)
 templates:
-  system: "You are a skilled novelist writing a compelling narrative."
-  seed_intro: "Here is the foundational information for this story:"
-  rag_intro: "Here is what has happened in the story so far:"
-  task_intro: "Your task:"
-  formatting_guide: "Write engaging prose with vivid descriptions, authentic dialogue, and emotional depth."
+  system: "You are a literary novelist writing a contemplative ghost story about acceptance and impermanence."
+  seed_intro: "Here is the story foundation for this literary exploration:"
+  rag_intro: "Here is David's journey so far in learning to accept rather than analyze:"
+  task_intro: "Continue this literary exploration:"
+  formatting_guide: "Write with literary depth, focusing on internal landscape, atmospheric detail, and the quiet beauty of impermanence. Ghosts are emotional truth, not horror."
 
 # Enhanced structure.yaml with seed data templates
 seed_data_templates:
@@ -80,9 +92,10 @@ seed_data_templates:
     format: |
       **{name}** ({role}): {description}
 
-      Key Traits: {traits}
-      Goals: {goals}
-      Relationships: {relationships}
+      Internal Conflicts: {backstory_details}
+      Emotional Pattern: {traits}
+      Journey: {goals}
+      Key Relationships: {relationships}
 
       {first_chapter_guidance}
 
@@ -91,7 +104,8 @@ seed_data_templates:
       - "description"
       - "backstory_details"
       - "must_reference_in_first_chapter"
-      - "relationships"
+      - "traits"
+      - "goals"
 
     # Which fields to de-emphasize or skip
     skip_fields:
@@ -109,35 +123,43 @@ seed_data_templates:
     format: |
       **{name}**: {description}
 
-      Key Events: {key_events}
+      Transformation Journey: {key_events}
       Characters Involved: {characters}
+      Thematic Focus: {themes}
 
     first_chapter_fields:
       - "description"
       - "key_events"
+      - "themes"
 
     field_formatting:
       key_events: "numbered_list"
       characters: "comma_separated"
+      themes: "bulleted_list"
 
   world:
     format: |
-      **Locations:**
+      **Setting & Atmosphere:**
       {locations}
+
+      **Symbolic Landscape:**
+      The Suffolk coast represents impermanence - everything here exists on borrowed time.
 
     first_chapter_fields:
       - "locations"
 
     field_formatting:
-      locations: "bulleted_descriptions"
+      locations: "detailed_descriptions"
 
   overview:
     format: |
-      **Story Summary:**
+      **Literary Vision:**
       {content}
 
-    # For overview, just use the content as-is
-    use_raw_content: true
+      **Tone:** Elegiac, contemplative, quietly supernatural
+
+    # For overview, use content but add tone guidance
+    use_raw_content: false
 
 # Template application rules
 template_rules:
@@ -147,11 +169,10 @@ template_rules:
 
   apply_arc_hints_when:
     - "is_first_chapter"
-    - "rag_context_missing"
 
   # How verbose to be with different data types
   verbosity:
-    characters: "detailed" # full, detailed, summary, minimal
-    arcs: "summary"
-    world: "detailed"
-    overview: "full"
+    characters: "detailed" # Need psychological depth
+    arcs: "detailed" # Transformation is central
+    world: "detailed" # Atmosphere crucial
+    overview: "full" # Literary vision important
